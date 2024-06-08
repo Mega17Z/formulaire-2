@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(97, 2, 126), rgba(255, 43, 160, 0.767) 85%);
+}
+
+.container{
+    max-width: 700px;
+    display: flex;
+    flex-grow: 1 1 auto;
+}
+
+.container form{
+    background-color: rgb(2, 2, 100);
+    padding: 2.7rem 1.5rem;
+}
+
+form h1{
+    text-align: center;
+    color: rgba(255, 43, 124, 0.767);
+}
+
+form .info{
+    display: flex;
+    margin: 1.2rem 0;
+}
+
+.info p{
+    color: white;
+}
+
+.info select{
+    background-color: rgb(2, 2, 100);
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+
+.info label{
+    width: 4.5rem;
+    margin-right: 1.7rem;
+    color: white;
+}
+
+.info input{
+    height: 1.4rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: rgb(2, 2, 100);
+    border-bottom: 1px solid white;
+}
+
+.info textarea{
+    height: 4.5rem;
+    width: 68%;
+    background-color: rgb(2, 2, 100);
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+form button{
+    padding: 0.7rem 4.5rem;
+    background: linear-gradient(180deg, rgb(97, 2, 126), rgba(255, 43, 160, 0.767) 85%);
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+.container .image{
+    width: 100%;
+    position: relative;
+}
+
+.image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.image .footer-image{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 43, 124, 0.767);
+    padding: 1.2rem;
+}
+
+.footer-image p{
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+@media (max-width: 700px){
+    body{
+        padding: 10px;
+        height: 120vh;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .info input{
+        width: 80%;
+    }
+
+    .info textarea{
+        width: 80%;    
+    }
+}
